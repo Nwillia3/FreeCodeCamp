@@ -1,15 +1,15 @@
 // data Structures curriculum notes
 
 
-Arrays are mutable
-    .push() // add elements to the end of an array
-    .unshift() // add elements to the beginning of an array
+// Arrays are mutable
+.push() // add elements to the end of an array
+.unshift() // add elements to the beginning of an array
 
-    .pop() // removes an element from end of array
+.pop() // removes an element from end of array
 shift() // removes an element from the beginning of an array
 
-    .splice() // remove any consective amount of elements from array
-    .splice(1, 2, 3) // also take up to three Parameters
+.splice() // remove any consective amount of elements from array
+.splice(1, 2, 3) // also take up to three Parameters
 #1 where you want to start 
 # 2 how many elements to delete
     .splice()

@@ -130,10 +130,10 @@ let longhand = /[A-Za-z0-9_]+/; // every number and letter
 let shorthand = /\w+/; // every number and letter
 /\w/g // matches every letter 
 /
-\w + / / / matches between every space
+\w + // matches between every space
 
 // Match Everything But Letters and Numbers
-let shortHand = /\W/;
+let shortHand = \W;
 let numbers = "42%";
 let sentence = "Coding!";
 numbers.match(shortHand); // Returns ["%"]
