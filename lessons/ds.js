@@ -3,35 +3,33 @@
 
 // Arrays are mutable
 .push() // add elements to the end of an array
-.unshift() // add elements to the beginning of an array
+    .unshift() // add elements to the beginning of an array
 
-.pop() // removes an element from end of array
+    .pop() // removes an element from end of array
 shift() // removes an element from the beginning of an array
 
-.splice() // remove any consective amount of elements from array
-.splice(1, 2, 3) // also take up to three Parameters
-#1 where you want to start 
+    .splice() // remove any consective amount of elements from array
+    .splice(1, 2, 3) // also take up to three Parameters
+#1 where you want to start
 # 2 how many elements to delete
     .splice()
 /* not only modify the array its being called on, but it also returns a new array containing
 the removed values */
-#3 add an item/s into an array
+#3 add an item / s into an array
 
 function colorChange(arr, index, newColor) {
-// arr is defined in the calling which is colorScheme
-// index is 2
-//newColor is # 332327
+    // arr is defined in the calling which is colorScheme
+    // index is 2
+    //newColor is # 332327
 
-arr.splice(index, 1, newColor);
-// index is 2
-// 1 is how many elements to remove
-//newColor is #332327 which is added in replace of #bb7e8c the 3rd element arr[2]
-return arr;
+    arr.splice(index, 1, newColor);
+    // index is 2
+    // 1 is how many elements to remove
+    //newColor is #332327 which is added in replace of #bb7e8c the 3rd element arr[2]
+    return arr;
 }
 
 let colorScheme = ['#878787', '#a08794', '#bb7e8c', '#c9b6be', '#d1becf'];
-
-
 
 colorScheme = colorChange(colorScheme, 2, '#332327');
 // we have removed '#bb7e8c' and added '#332327' in its place
@@ -40,7 +38,7 @@ colorScheme = colorChange(colorScheme, 2, '#332327');
 
 //   NOT splice but slice
 .slice() // doesnt modify any array but copies or extract a given number of elemeents
-.slice(1, 2) // take two paramaters
+    .slice(1, 2) // take two paramaters
 #1  // where to begin extraction
 # 2 // where to stop extraction
 // (extraction will occur up to, but not including the element at this index
@@ -91,11 +89,11 @@ let FCC_User = {
 };
 
 To access the number of followers do ...FCC_User['followers'] or FCC_User.followers
-    // note that the bracket notation used '' around the prpoerty/key 
-    // * brackets allows us to pass in variables * //
+// note that the bracket notation used '' around the prpoerty/key 
+// * brackets allows us to pass in variables * //
 
-    // use delete to remove object property
-    delete FCC_User.points
+// use delete to remove object property
+delete FCC_User.points
 
     // Check if an Object has a Property
     .hasOwnProperty()
