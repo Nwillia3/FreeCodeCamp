@@ -236,7 +236,7 @@ ducky.getHatchedEggCount(); // returns 10
 
 // practial usage
 /* used to group related functionality into a single object or module. 
-advantage of a module pattern is that all of thre methods can be packaged into a single object that can then be used by other parts of your code */
+advantage of a module pattern is that all of the methods can be packaged into a single object that can then be used by other parts of your code */
 let funModule = (function () {
   return {
     isCuteMixin: function (obj) {
@@ -251,3 +251,5 @@ let funModule = (function () {
     }
   }
 })();
+
+// the funModule object contains all of the mixin methods/behoaviors as prooperties of the object
